@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEFF4"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/diankafragment_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#B42A28"
+        android:baselineAligned="true" >
+
+        <TextView
+            android:id="@+id/diankafragment_title_text"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="@string/dianka_title"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/diankafragment_title_Image_reflush"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="22dp"
+            android:contentDescription="@null"
+            android:src="@drawable/dianka_reflush" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/dianka_content_emailitem"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="1dp"
+        android:gravity="center_vertical"
+        android:background="@android:color/white"
+         >
+
+        <TextView
+            android:id="@+id/dianka_item_showemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="1*005@qq.com"
+            android:textColor="#C3C3C3"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:id="@+id/dianka_item_right1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="200dp"
+            android:layout_alignParentRight="true"
+            android:contentDescription="@null"
+            android:src="@drawable/dianka_right" />
+    </RelativeLayout>>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#DFDFE4" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="#DFDFE4" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/dianka_item1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@android:color/white" >
+
+            <RadioButton
+                android:id="@+id/radiobutton_tongyong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="@string/radiobutton1" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/radiobutton_tongyong"
+                android:layout_marginLeft="25dp"
+                android:background="#D5D4D8" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/dianka_item2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@android:color/white" >
+
+            <RadioButton
+                android:id="@+id/radiobutton_jishou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="@string/radiobutton2" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/radiobutton_jishou"
+                android:layout_marginLeft="25dp"
+                android:background="#D5D4D8" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/dianka_item3"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@android:color/white" >
+
+            <RadioButton
+                android:id="@+id/radiobutton_zhuanyong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="@string/radiobutton3" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="28dp"
+                android:text="@string/choosegame"
+                android:textColor="#828282"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@null"
+                android:src="@drawable/dianka_right" />
+        </RelativeLayout>
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#D5D4D8" />
+
+    <RelativeLayout
+        android:id="@+id/choose_diankaNum"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/white" >
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#D5D4D8" />
+
+        <TextView
+            android:id="@+id/dianka_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/view1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="选择充值点数:"
+            android:textColor="#C3C3C3"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/dianka_show_choose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/dianka_show"
+            android:layout_alignBottom="@+id/dianka_show"
+            android:layout_toRightOf="@+id/dianka_show"
+            android:text="50点"
+            android:textColor="#B42A28"
+            android:textSize="18sp" />
+
+        <GridView
+            android:id="@+id/dianka_gridView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dianka_show"
+            android:layout_marginTop="10dp"
+            android:numColumns="3"
+            android:verticalSpacing="10dp" >
+        </GridView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/dianka_instruction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/instruction"
+            android:textColor="#767676"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/dianka_instruction"
+            android:layout_marginRight="10dp"
+            android:textColor="#258CFD"
+            android:textSize="13sp"
+            android:text="@string/instruction_right" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/dianka_button"
+        android:textColor="@android:color/white"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/dianka_item_checked" />
+
+</LinearLayout>

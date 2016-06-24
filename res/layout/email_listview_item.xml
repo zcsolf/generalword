@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/email_item_Image"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@null"
+        android:src="@drawable/gamefriend_item_seventh" />
+
+    <TextView
+        android:id="@+id/email_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/email_item_Image"
+        android:layout_toRightOf="@+id/email_item_Image"
+        android:text="TextView"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/email_item_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/email_item_Image"
+        android:layout_alignLeft="@+id/email_item_title"
+        android:text="TextView"
+        android:singleLine="true"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/email_item_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/email_item_content"
+        android:layout_below="@+id/email_item_content"
+        android:layout_marginTop="10dp"
+        android:text="TextView"
+        android:textSize="10sp" />
+
+    <View
+        android:id="@+id/email_view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignLeft="@+id/email_item_content"
+        android:layout_below="@+id/email_item_data"
+        android:layout_marginTop="5dp"
+        android:background="#E9E9EB" />
+
+</RelativeLayout>

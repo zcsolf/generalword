@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/gamefriend_title"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#B62829"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/gamefriend_titletext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gamefriend_title"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/gamefriend_mhxy_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:contentDescription="@null"
+        android:src="@drawable/mhxy" />
+
+    <TextView
+        android:id="@+id/gamefriend_logo_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/gamefriend_title"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/gamefriend_mhxy_logo"
+        android:text="@string/zcsolf_email"
+        android:textColor="@android:color/white"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/gamefriend_logo_title"
+        android:layout_below="@+id/gamefriend_title"
+        android:layout_marginTop="5dp"
+        android:text="@string/logo"
+        android:textColor="#A1A1A1"
+        android:textSize="12sp" />
+
+    <GridView
+        android:id="@+id/gamefriend_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gamefriend_mhxy_logo"
+        android:layout_marginTop="20dp"
+        android:numColumns="3" >
+    </GridView>
+
+</RelativeLayout>

@@ -1,0 +1,218 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.tangyuan726.jiangjun.MainActivity$PlaceholderFragment" >
+
+    <RelativeLayout
+        android:id="@+id/loginfragment_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#B62829"
+        android:baselineAligned="true" >
+
+        <TextView
+            android:id="@+id/loginfragment_title_text"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="@string/loginfragment_title"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/loginfragment_title_Image_news"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="22dp"
+            android:contentDescription="@null"
+            android:src="@drawable/icon_fragmentlogin_news" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout_fragmentLogin_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/loginfragment_backImage"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/star" />
+
+        <ImageView
+            android:id="@+id/loginfragment_2weimaImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="170dp"
+            android:contentDescription="@null"
+            android:src="@drawable/loginfragment_2weima" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/loginfragment_2weimaText_saoyisao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/loginfragment_2weima"
+        android:textColor="#C7C7C7"
+        android:textSize="12sp" />
+
+    <!-- 以下是动态密码的接收文本 -->
+
+    <LinearLayout
+        android:id="@+id/fragmentLayout_loginfragment_Dympassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:weightSum="1.0" >
+
+            <TextView
+                android:id="@+id/Text2weima_num1"
+                android:layout_width="25dp"
+                android:layout_height="40dp"
+                android:background="@drawable/rectangle"
+                android:gravity="center"
+                android:text="@string/number_1"
+                android:textColor="@android:color/white"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:weightSum="1.0" >
+
+            <TextView
+                android:id="@+id/Text2weima_num2"
+                android:layout_width="25dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/rectangle"
+                android:gravity="center"
+                android:text="@string/number_2"
+                android:textColor="@android:color/white"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:weightSum="1.0" >
+
+            <TextView
+                android:id="@+id/Text2weima_num3"
+                android:layout_width="25dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/rectangle"
+                android:gravity="center"
+                android:text="@string/number_3"
+                android:textColor="@android:color/white"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:weightSum="1.0" >
+
+            <TextView
+                android:id="@+id/Text2weima_num4"
+                android:layout_width="25dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/rectangle"
+                android:gravity="center"
+                android:text="@string/number_4"
+                android:textColor="@android:color/white"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:weightSum="1.0" >
+
+            <TextView
+                android:id="@+id/Text2weima_num5"
+                android:layout_width="25dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/rectangle"
+                android:gravity="center"
+                android:text="@string/number_5"
+                android:textColor="@android:color/white"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:weightSum="1.0" >
+
+            <TextView
+                android:id="@+id/Text2weima_num6"
+                android:layout_width="25dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/rectangle"
+                android:gravity="center"
+                android:text="@string/number_6"
+                android:textColor="@android:color/white"
+                android:textSize="25sp" />
+        </LinearLayout>
+    </LinearLayout>
+    
+    <ProgressBar 
+        android:id="@+id/fragmentlogin_Refresh"
+        android:layout_width="196dp"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:background="#BCBBC1"
+        android:max="600"
+        android:progressDrawable="@drawable/progress"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_marginTop="10dp"/>
+     <!-- <View
+        android:id="@+id/fragmentlogin_Refresh"
+        android:layout_width="198dp"
+        android:layout_gravity="center"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="#BCBBC1" /> -->
+
+     <TextView
+         android:id="@+id/textView1"
+         android:layout_marginTop="10dp"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center"
+         android:textColor="#C7C7C7"
+         android:textSize="12sp"
+         android:text="@string/dyspassword" />
+
+     <TextView
+         android:id="@+id/fragmentlogin_Time"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="right"
+         android:layout_marginTop="30dp"
+         android:layout_marginRight="10dp"
+         android:textColor="#C7C7C7"
+         android:text="11:11:11" />
+
+</LinearLayout>

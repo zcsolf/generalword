@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/account_list_item_layout"
+    android:paddingTop="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/account_item_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:contentDescription="@null"
+        android:src="@drawable/account_item_first" />
+
+    <TextView
+        android:id="@+id/account_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/account_item_image"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/account_item_image"
+        android:text="TextView"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/account_item_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/account_item_image"
+        android:layout_alignLeft="@+id/account_item_title"
+        android:text="TextView"
+        android:textColor="#848484"
+        android:textSize="13sp" />
+
+    <ImageView
+        android:id="@+id/account_item_go"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:contentDescription="@null"
+        android:src="@drawable/dianka_right" />
+
+    <TextView
+        android:id="@+id/account_item_exracontent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/account_item_content"
+        android:layout_alignBottom="@+id/account_item_content"
+        android:layout_toRightOf="@+id/account_item_content"
+        android:text="TextView"
+        android:textColor="#848484"
+        android:textSize="13sp" />
+
+    <View
+        android:id="@+id/account_view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignLeft="@+id/account_item_content"
+        android:layout_below="@+id/account_item_image"
+        android:layout_marginTop="5dp"
+        android:background="#E9E9EB" />
+
+</RelativeLayout>

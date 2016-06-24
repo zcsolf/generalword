@@ -1,0 +1,159 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <android.support.v4.view.ViewPager
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/line"
+        tools:context=".MainActivity" />
+
+    <LinearLayout
+        android:id="@+id/lLayout_AllFrame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:baselineAligned="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+
+        <RelativeLayout
+            android:id="@+id/rLayout_loginFrame" 
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" >
+
+            <ImageView
+                android:id="@+id/rLayout_loginImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@null"
+                android:src="@drawable/icon_login_pressed" />
+
+            <TextView
+                android:id="@+id/rLayout_loginText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rLayout_loginImage"
+                android:layout_centerHorizontal="true"
+                android:text="@string/bottom_tab_login"
+                android:textColor="@color/bottomtab_normal"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rLayout_diankaFrame"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" >
+
+            <ImageView
+                android:id="@+id/rLayout_diankaImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@null"
+                android:src="@drawable/icon_dianka_normal" />
+
+            <TextView
+                android:id="@+id/rLayout_diankaText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rLayout_diankaImage"
+                android:layout_centerHorizontal="true"
+                android:text="@string/bottom_tab_dianka"
+                android:textColor="@color/bottomtab_normal"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rLayout_accountFrame"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" >
+
+            <ImageView
+                android:id="@+id/rLayout_accountImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@null"
+                android:src="@drawable/icon_account_normal" />
+
+            <TextView
+                android:id="@+id/rLayout_accountText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rLayout_accountImage"
+                android:layout_centerHorizontal="true"
+                android:text="@string/bottom_tab_accountCenter"
+                android:textColor="@color/bottomtab_normal"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rLayout_GameFrame"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" >
+
+            <ImageView
+                android:id="@+id/rLayout_GameFriendImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@null"
+                android:src="@drawable/icon_game_normal" />
+
+            <TextView
+                android:id="@+id/rLayout_GameFriendText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rLayout_GameFriendImage"
+                android:layout_centerHorizontal="true"
+                android:text="@string/bottom_tab_gameFriend"
+                android:textColor="@color/bottomtab_normal"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rLayout_MoreFrame"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" >
+
+            <ImageView
+                android:id="@+id/rLayout_MoreImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@null"
+                android:src="@drawable/icon_more_normal" />
+
+            <TextView
+                android:id="@+id/rLayout_MoreText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rLayout_MoreImage"
+                android:layout_centerHorizontal="true"
+                android:text="@string/bottom_tab_more"
+                android:textColor="@color/bottomtab_normal"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/lLayout_AllFrame"
+        android:layout_marginBottom="8dp"
+        android:background="@color/line" />
+
+</RelativeLayout>
